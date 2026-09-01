@@ -1,0 +1,293 @@
+{
+  "CKA": {
+    "curriculumVersion": "1.35",
+    "fullName": "Certified Kubernetes Administrator",
+    "domains": [
+      {
+        "name": "Cluster Architecture, Installation & Configuration",
+        "weight": 25,
+        "competencies": [
+          "Manage role based access control (RBAC)",
+          "Use Kubeadm to install a basic cluster",
+          "Manage a highly-available Kubernetes cluster",
+          "Provision underlying infrastructure to deploy a Kubernetes cluster",
+          "Perform a version upgrade on a Kubernetes cluster using Kubeadm",
+          "Implement etcd backup and restore"
+        ],
+        "docPatterns": [
+          "concepts/architecture/**",
+          "concepts/cluster-administration/**",
+          "concepts/overview/**",
+          "setup/**",
+          "reference/access-authn-authz/**",
+          "reference/setup-tools/**",
+          "tasks/administer-cluster/kubeadm/**",
+          "tasks/administer-cluster/configure-upgrade-etcd"
+        ]
+      },
+      {
+        "name": "Workloads & Scheduling",
+        "weight": 15,
+        "competencies": [
+          "Understand deployments and how to perform rolling update and rollbacks",
+          "Use ConfigMaps and Secrets to configure applications",
+          "Know how to scale applications",
+          "Understand the primitives used to create robust, self-healing application deployments",
+          "Understand how resource limits can affect Pod scheduling",
+          "Awareness of manifest management and common templating tools"
+        ],
+        "docPatterns": [
+          "concepts/workloads/**",
+          "concepts/scheduling-eviction/**",
+          "tasks/run-application/**",
+          "tasks/job/**",
+          "tasks/manage-daemon/**",
+          "tasks/manage-hugepages/**",
+          "tasks/manage-gpus/**",
+          "tasks/inject-data-application/**"
+        ]
+      },
+      {
+        "name": "Services & Networking",
+        "weight": 20,
+        "competencies": [
+          "Understand host networking configuration on the cluster nodes",
+          "Understand connectivity between Pods",
+          "Understand ClusterIP, NodePort, LoadBalancer service types and endpoints",
+          "Know how to use Ingress controllers and Ingress resources",
+          "Know how to configure and use CoreDNS",
+          "Choose an appropriate container network interface plugin"
+        ],
+        "docPatterns": [
+          "concepts/services-networking/**",
+          "tasks/access-application-cluster/**",
+          "tasks/network/**",
+          "reference/networking/**"
+        ]
+      },
+      {
+        "name": "Storage",
+        "weight": 10,
+        "competencies": [
+          "Understand storage classes, persistent volumes",
+          "Understand volume mode, access modes and reclaim policies for volumes",
+          "Understand persistent volume claims primitive",
+          "Know how to configure applications with persistent storage"
+        ],
+        "docPatterns": [
+          "concepts/storage/**",
+          "tasks/configure-pod-container/configure-volume-storage",
+          "tasks/configure-pod-container/configure-projected-volume-storage",
+          "tasks/administer-cluster/change-pv-*",
+          "tasks/administer-cluster/change-default-storage-class",
+          "tasks/administer-cluster/limit-storage-consumption"
+        ]
+      },
+      {
+        "name": "Troubleshooting",
+        "weight": 30,
+        "competencies": [
+          "Evaluate cluster and node logging",
+          "Understand how to monitor applications",
+          "Manage container stdout & stderr logs",
+          "Troubleshoot application failure",
+          "Troubleshoot cluster component failure",
+          "Troubleshoot networking"
+        ],
+        "docPatterns": ["tasks/debug/**", "reference/debug-cluster/**"]
+      }
+    ]
+  },
+  "CKAD": {
+    "curriculumVersion": "1.35",
+    "fullName": "Certified Kubernetes Application Developer",
+    "domains": [
+      {
+        "name": "Application Design & Build",
+        "weight": 20,
+        "competencies": [
+          "Define, build and modify container images",
+          "Understand Jobs and CronJobs",
+          "Understand multi-container Pod design patterns",
+          "Utilize persistent and ephemeral volumes"
+        ],
+        "docPatterns": [
+          "concepts/containers/**",
+          "concepts/workloads/pods/**",
+          "concepts/workloads/controllers/job",
+          "concepts/workloads/controllers/cron-jobs",
+          "tasks/job/**",
+          "concepts/storage/ephemeral-volumes",
+          "concepts/storage/persistent-volumes"
+        ]
+      },
+      {
+        "name": "Application Deployment",
+        "weight": 20,
+        "competencies": [
+          "Use Kubernetes primitives to implement common deployment strategies",
+          "Understand Deployments and how to perform rolling updates",
+          "Use the Helm package manager to deploy existing packages"
+        ],
+        "docPatterns": [
+          "concepts/workloads/controllers/deployment",
+          "concepts/workloads/controllers/replicaset",
+          "tasks/run-application/**"
+        ]
+      },
+      {
+        "name": "Application Observability and Maintenance",
+        "weight": 15,
+        "competencies": [
+          "Understand API deprecations",
+          "Implement probes and health checks",
+          "Use provided tools to monitor Kubernetes applications",
+          "Utilize container logs",
+          "Debug in Kubernetes"
+        ],
+        "docPatterns": [
+          "tasks/debug/**",
+          "tasks/configure-pod-container/configure-liveness-readiness-startup-probes",
+          "concepts/workloads/pods/pod-lifecycle",
+          "reference/using-api/deprecation-policy"
+        ]
+      },
+      {
+        "name": "Application Environment, Configuration and Security",
+        "weight": 25,
+        "competencies": [
+          "Discover and use resources that extend Kubernetes (CRDs, Operators)",
+          "Understand authentication, authorization and admission control",
+          "Understand requests, limits, quotas",
+          "Understand ConfigMaps",
+          "Define resource requirements",
+          "Create & consume Secrets",
+          "Understand ServiceAccounts",
+          "Understand SecurityContexts"
+        ],
+        "docPatterns": [
+          "tasks/configmap-secret/**",
+          "tasks/inject-data-application/**",
+          "concepts/configuration/**",
+          "concepts/security/**",
+          "concepts/policy/**",
+          "concepts/extend-kubernetes/**",
+          "tasks/configure-pod-container/security-context",
+          "tasks/configure-pod-container/configure-service-account",
+          "tasks/administer-cluster/manage-resources/**",
+          "concepts/workloads/pods/pod-qos"
+        ]
+      },
+      {
+        "name": "Services & Networking",
+        "weight": 20,
+        "competencies": [
+          "Demonstrate basic understanding of NetworkPolicies",
+          "Provide and troubleshoot access to applications via services",
+          "Use Ingress rules to expose applications"
+        ],
+        "docPatterns": ["concepts/services-networking/**", "tasks/access-application-cluster/**"]
+      }
+    ]
+  },
+  "CKS": {
+    "curriculumVersion": "1.34",
+    "fullName": "Certified Kubernetes Security Specialist",
+    "requiresCert": "CKA",
+    "domains": [
+      {
+        "name": "Cluster Setup",
+        "weight": 10,
+        "competencies": [
+          "Use Network security policies to restrict cluster level access",
+          "Use CIS benchmark to review the security configuration",
+          "Properly set up Ingress objects with security control",
+          "Protect node metadata and endpoints",
+          "Verify platform binaries before deploying"
+        ],
+        "docPatterns": [
+          "concepts/services-networking/network-policies",
+          "setup/production-environment/**",
+          "tasks/administer-cluster/kubeadm/**"
+        ]
+      },
+      {
+        "name": "Cluster Hardening",
+        "weight": 15,
+        "competencies": [
+          "Restrict access to Kubernetes API",
+          "Use RBAC to minimize exposure",
+          "Exercise caution when using service accounts",
+          "Update Kubernetes frequently"
+        ],
+        "docPatterns": [
+          "reference/access-authn-authz/**",
+          "concepts/security/controlling-access"
+        ]
+      },
+      {
+        "name": "System Hardening",
+        "weight": 15,
+        "competencies": [
+          "Minimize host OS footprint",
+          "Minimize IAM roles",
+          "Minimize external access to the network",
+          "Use kernel hardening tools such as AppArmor and seccomp"
+        ],
+        "docPatterns": [
+          "tutorials/security/**",
+          "tasks/configure-pod-container/security-context",
+          "tasks/configure-pod-container/user-namespaces"
+        ]
+      },
+      {
+        "name": "Minimize Microservice Vulnerabilities",
+        "weight": 20,
+        "competencies": [
+          "Set up appropriate OS level security domains",
+          "Manage Kubernetes secrets",
+          "Use container runtime sandboxes (gVisor, kata containers)",
+          "Implement Pod-to-Pod encryption (mTLS)",
+          "Use admission control to enforce security policy"
+        ],
+        "docPatterns": [
+          "concepts/security/**",
+          "concepts/policy/**",
+          "tasks/configmap-secret/**",
+          "tasks/configure-pod-container/enforce-standards-admission-controller"
+        ]
+      },
+      {
+        "name": "Supply Chain Security",
+        "weight": 20,
+        "competencies": [
+          "Minimize base image footprint",
+          "Secure your supply chain: whitelist allowed registries, sign and validate images",
+          "Use static analysis of user workloads and container images",
+          "Scan images for known vulnerabilities"
+        ],
+        "docPatterns": [
+          "concepts/containers/**",
+          "tasks/configure-pod-container/pull-image-private-registry",
+          "concepts/security/pod-security-standards"
+        ]
+      },
+      {
+        "name": "Monitoring, Logging and Runtime Security",
+        "weight": 20,
+        "competencies": [
+          "Perform behavioral analytics to detect malicious activities",
+          "Detect threats within the physical infrastructure, apps, networks, data, users, workloads",
+          "Investigate and identify phases of an attack and bad actors within the environment",
+          "Ensure immutability of containers at runtime",
+          "Use audit logs to monitor access"
+        ],
+        "docPatterns": [
+          "concepts/cluster-administration/logging",
+          "reference/instrumentation/**",
+          "tasks/debug/**"
+        ]
+      }
+    ]
+  }
+}
